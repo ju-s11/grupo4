@@ -1,8 +1,16 @@
 # dicionário global para armazenar as respostas de avaliação
-# deve ser global? ou devo restringir o acesso (static)?
 respostas = []
 
+# exportando funções de acesso
+_all_ = [
+    "add_resposta",
+    "get_resposta",
+    "get_resposta_by_aluno",
+    "get_resposta_by_avaliacao"
+]
+
 # dicionário de avaliações (aqui apenas para testes)
+"""
 avaliacoes = {
     101: {
         "id": 101,
@@ -19,8 +27,8 @@ avaliacoes = {
         "perguntas": ["Q1", "Q2", "Q3"],
     },
 }
-
-# devo criar uma função auxiliar para o usuário (aluno) preencher as respostas de uma resposta?
+"""
+# devo criar uma função auxiliar para o usuário (aluno) preencher as respostas de uma resposta? não. módulo principal faz isso.
 # def preencher_respostas(id_avaliacao, respostas):retorna lista de inteiros (respostas_aluno)
 
 
@@ -129,7 +137,7 @@ def get_respostas_by_avaliacao(id_avaliacao):
 
 
 # exemplos de uso
-
+"""
 # adicionando algumas respostas
 print("Retorno add_resposta:\n")
 
@@ -169,3 +177,6 @@ print("\n")
 print("Retorno get_respostas_by_avaliacao:\n")
 print(get_respostas_by_avaliacao(101))
 print("\n")
+"""
+# mensagem subliminar para o flávio :)
+print("Oie, Flávio! :), vc viu isso?")
